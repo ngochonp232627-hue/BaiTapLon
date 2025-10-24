@@ -1,0 +1,314 @@
+
+  <!DOCTYPE html>
+  <html lang="vi">
+
+  <head runat="server">
+    <meta charset="utf-8" />
+    <title>Tất cả sản phẩm</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+      <link href="TatCaSanPham1.css" rel="stylesheet" />
+
+  </head>
+
+  <body>
+    <form id="form1" runat="server">
+
+      <!-- ===== HEADER ===== -->
+      <header>
+
+        <!-- Logo + Menu -->
+        <div class="header-left">
+          <a href="TrangChu.aspx">
+            <img src="Anh/logo.jpg" alt="Logo" class="logo-img" />
+          </a>
+
+          <nav class="main-menu">
+            <a href="TrangChu.aspx">Trang chủ|</a>
+            <a href="#" class="active">Tất cả sản phẩm</a>
+          </nav>
+        </div>
+
+        <!-- Thanh tìm kiếm -->
+        
+        <div class="search-box">
+  <input type="text" placeholder="Tìm kiếm sản phẩm...">
+  <button type="submit">
+    <i class="fas fa-search"></i>
+  </button>
+</div>
+
+        <!-- Icon tài khoản và giỏ hàng -->
+        <div class="header-icons">
+          <a href="#" class="account">
+            <i class="fas fa-user"></i>
+            <span>Tài khoản</span>
+          </a>
+          <a href="#" class="cart">
+            <i class="fas fa-shopping-cart"></i>
+            <span>Giỏ hàng</span>
+          </a>
+        </div>
+      </header>
+
+
+
+
+      <!-- =================== BANNER =================== -->
+      <section class="banner">
+        <div class="banner-box">
+          <img src="Anh/Banner1.png" alt="QUẢNG CÁO" />
+        </div>
+      </section>
+
+      <section class="category">
+        <div class="category-header">
+          <h2>Bộ lọc tất cả sản phẩm</h2>
+        </div>
+        <!-- BỘ LỌC -->
+        <div class="filter-bar">
+          <!-- Nhóm chọn -->
+          <div class="filter-item">
+            <label for="sort">Sắp xếp theo:</label>
+            <select id="sort" name="sort">
+              <option value="macdinh">Mặc định</option>
+              <option value="giam">Giá giảm dần</option>
+              <option value="tang">Giá tăng dần</option>
+              <option value="banchay">Bán chạy nhất</option>
+              <option value="moinhat">Sản phẩm mới nhất</option>
+            </select>
+          </div>
+
+          <div class="filter-item">
+            <label for="trademark">Thương hiệu:</label>
+            <select id="trademark" name="trademark">
+              <option value="tatca">Tất cả</option>
+              <option value="apple">Apple</option>
+              <option value="samsung">Samsung</option>
+              <option value="asus">ASUS</option>
+              <option value="dell">Dell</option>
+              <option value="logitech">Logitech</option>
+              <option value="lenovo">Lenovo</option>
+            </select>
+          </div>
+
+          <div class="filter-item">
+            <label for="type">Loại sản phẩm:</label>
+            <select id="type" name="type">
+              <option value="tatca">Tất cả</option>
+              <option value="camera">Camera</option>
+              <option value="phone">Điện thoại</option>
+              <option value="apple">Apple</option>
+              <option value="laptop">Máy tính</option>
+              <option value="screen">Màn hình</option>
+              <option value="more">Phụ kiện</option>
+            </select>
+          </div>
+        </div>
+      </section>
+
+
+
+      <!-- TẤT CẢ SẢN PHẨM -->
+      <div class="section-header">
+        <h2>Tất cả sản phẩm</h2>
+      </div>
+
+      <div class="product-grid">
+        <div class="product">
+          <img src="Anh/Camera/Camera.png" alt="Sản phẩm 1" />
+          <div class="product-name">Camera IP 4MP-Chống Báo Động Gỉa-Đàm Thoại 2 Chiều</div>
+          <div class="product-price">320.000 đ</div>
+          <div class="product-actions">
+            <button class="btn-icon" title="Thêm vào giỏ hàng">
+              <i class="fas fa-cart-plus"></i>
+            </button>
+            <button class="btn-buy">Mua ngay</button>
+          </div>
+
+        </div>
+
+
+        <div class="product">
+          <img src="Anh/Camera/Camera2.png" alt="Sản phẩm 2" />
+          <div class="product-name">Camera an ninh ngoài trời TP-Link C310</div>
+          <div class="product-price">550.000 đ</div>
+          <div class="product-actions">
+            <button class="btn-icon" title="Thêm vào giỏ hàng">
+              <i class="fas fa-cart-plus"></i>
+            </button>
+            <button class="btn-buy">Mua ngay</button>
+          </div>
+        </div>
+
+        <div class="product">
+          <img src="Anh/Camera/Camera3.png" alt="Sản phẩm 3" />
+          <div class="product-name">Camera IP Ngoài Trời 360 Độ 4MP Eviz H90 Dual</div>
+          <div class="product-price">1.799.000 đ</div>
+          <div class="product-actions">
+            <button class="btn-icon" title="Thêm vào giỏ hàng">
+              <i class="fas fa-cart-plus"></i>
+            </button>
+            <button class="btn-buy">Mua ngay</button>
+          </div>
+        </div>
+
+        <div class="product">
+          <img src="Anh/Camera/Camera4.png" alt="Sản phẩm 4" />
+          <div class="product-name">Camera Hikvision DS-2CD1123G2-LIUF</div>
+          <div class="product-price">920.000 đ</div>
+          <div class="product-actions">
+            <button class="btn-icon" title="Thêm vào giỏ hàng">
+              <i class="fas fa-cart-plus"></i>
+            </button>
+            <button class="btn-buy">Mua ngay</button>
+          </div>
+        </div>
+
+        <div class="product">
+          <img src="Anh/Camera/Camera5.png" alt="Sản phẩm 5" />
+          <div class="product-name">Camera IP 4MP HIKVISION DS-2CV1F43G2-LIDWF(B)</div>
+          <div class="product-price">750.000 đ</div>
+          <div class="product-actions">
+            <button class="btn-icon" title="Thêm vào giỏ hàng">
+              <i class="fas fa-cart-plus"></i>
+            </button>
+            <button class="btn-buy">Mua ngay</button>
+          </div>
+        </div>
+
+        <div class="product">
+          <img src="Anh/MayTinh/MayTinh1.png" alt="Sản phẩm 6" />
+          <div class="product-name">Laptop Asus Vivobook S14 M3407KA-SF034WS (Ryzen AI 5 330/ AMD Radeon 16GB/ 512GB
+          </div>
+          <div class="product-price">20.310.000 đ</div>
+          <div class="product-actions">
+            <button class="btn-icon" title="Thêm vào giỏ hàng">
+              <i class="fas fa-cart-plus"></i>
+            </button>
+            <button class="btn-buy">Mua ngay</button>
+          </div>
+        </div>
+
+        <div class="product">
+          <img src="Anh/ĐienThoai/DienThoai2.png" alt="Sản phẩm 7" />
+          <div class="product-name">iPhone 17 Pro Max 1TB Chính hãng...</div>
+          <div class="product-price">50.380.000 đ</div>
+          <div class="product-actions">
+            <button class="btn-icon" title="Thêm vào giỏ hàng">
+              <i class="fas fa-cart-plus"></i>
+            </button>
+            <button class="btn-buy">Mua ngay</button>
+          </div>
+        </div>
+
+        <div class="product">
+          <img src="Anh/ĐienThoai/DienThoai3.png" alt="Sản phẩm 8" />
+          <div class="product-name">Điện Thoại iPhone 16 PRO 128GB Titan Sa Mạc Chính Hãng VNA...</div>
+          <div class="product-price">27.560.000 đ</div>
+          <div class="product-actions">
+            <button class="btn-icon" title="Thêm vào giỏ hàng">
+              <i class="fas fa-cart-plus"></i>
+            </button>
+            <button class="btn-buy">Mua ngay</button>
+          </div>
+        </div>
+
+        <div class="product">
+          <img src="Anh/MayTinh/MayTinh2.png" alt="Sản phẩm 9" />
+          <div class="product-name">Dell Inspiron 14 Plus 7440F – Laptop 14″ QHD+ Gọn Nhẹ, Cảm Ứng Hiệu Năng Mạnh Với
+            Intel Core 7-240H</div>
+          <div class="product-price">19.120.000 đ</div>
+          <div class="product-actions">
+            <button class="btn-icon" title="Thêm vào giỏ hàng">
+              <i class="fas fa-cart-plus"></i>
+            </button>
+            <button class="btn-buy">Mua ngay</button>
+          </div>
+        </div>
+
+        <div class="product">
+          <img src="Anh/MayTinh/QuatTanNhiet.png" alt="Sản phẩm 10" />
+          <div class="product-name">Quạt tản nhiệt NZXT F120 RGB Duo Black</div>
+          <div class="product-price">599.000 đ</div>
+          <div class="product-actions">
+            <button class="btn-icon" title="Thêm vào giỏ hàng">
+              <i class="fas fa-cart-plus"></i>
+            </button>
+            <button class="btn-buy">Mua ngay</button>
+          </div>
+        </div>
+      </div>
+
+        <div class="readmore-btn ">
+          <span>Xem thêm ></span>
+        </div>
+    </form>
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+      <div class="footer-container">
+
+        <!-- Cột 1: Dịch vụ khách hàng -->
+        <div class="footer-column">
+          <h3>DỊCH VỤ KHÁCH HÀNG</h3>
+          <ul>
+            <li><a href="#">Trung Tâm Trợ Giúp IDEALTECH</a></li>
+            <li><a href="#">Hướng Dẫn Mua Hàng/Đặt Hàng</a></li>
+            <li><a href="#">Hướng Dẫn Sử Dụng</a></li>
+            <li><a href="#">Trả Hàng/Hoàn Tiền</a></li>
+            <li><a href="#">Chính Sách Bảo Hành</a></li>
+          </ul>
+        </div>
+
+        <!-- Cột 2: Giới thiệu -->
+        <div class="footer-column">
+          <h3>IDEALTECH THINK DIFFERENT</h3>
+          <ul>
+            <li><a href="#">Về IDEALTECH Think Different</a></li>
+            <li><a href="#">Điều Khoản IDEALTECH</a></li>
+            <li><a href="#">Chính Sách Bảo Mật</a></li>
+            <li><a href="#">Liên Hệ Truyền Thông</a></li>
+            <li><a htef="#">Email: IDEALTECH@gmail.com </a></li>
+            <li><a href="#">Hotline: 0123 456 789</a></li>
+          </ul>
+        </div>
+
+        <!-- Cột 3: Thanh toán và vận chuyển -->
+        <div class="footer-column">
+          <h3>THANH TOÁN</h3>
+          <div class="footer-logos">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Visa.svg" alt="Visa">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Mastercard-logo.png" alt="MasterCard">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/American_Express_logo_%282018%29.svg"
+              alt="Amex">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/JCB_logo.svg" alt="JCB">
+          </div>
+
+          <h3>ĐƠN VỊ VẬN CHUYỂN</h3>
+          <div class="footer-logos">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/35/Viettel_Post_logo.png" alt="Viettel Post">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/VNPost_logo.png" alt="VNPost">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a6/J%26T_Express_logo.svg" alt="J&T">
+          </div>
+        </div>
+
+        <!-- Cột 4: Theo dõi IDEALTECH -->
+        <div class="footer-column">
+          <h3>THEO DÕI IDEALTECH</h3>
+          <ul>
+            <li><a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384005.png" alt="Facebook"
+                  width="18"> Facebook</a></li>
+            <li><a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384015.png" alt="Instagram"
+                  width="18"> Instagram</a></li>
+            <li><a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384014.png" alt="LinkedIn"
+                  width="18"> LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </footer>
+
+
+  </body>
+
+  </html>
